@@ -15,6 +15,13 @@ class Includer {
 			'onload': onload
 		}, 'head');
 	}
+	style (src, onload=() => {}) {
+		return element('link', {
+			'rel': 'stylesheet',
+			'href': src,
+			'onload': onload
+		}, 'head');
+	}
 	list (path, type, script_onload, list_onload, list) {
 		try {
 			let now = 0;
@@ -24,12 +31,13 @@ class Includer {
 					now++;
 					script_onload();
 					if (now >= from) {
+						// __history__.log = __phrases__['script_list'];
 						list_onload();
 					}
 				});
 			}
 		} catch (error) {
-			return __error__.exception(ERRORS['includer_list']);
+			return __error__.exception('INCLUDER_LIST');
 		}
 	}
 }

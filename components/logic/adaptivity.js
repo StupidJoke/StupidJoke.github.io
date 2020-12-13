@@ -14,12 +14,16 @@ class Adaptivity {
 			});
 		} catch (error) {
 			this.device = 'desktop';
-			__error__.exception(ERRORS['ADAPTIVITY_DEVICE']);
+			__error__.exception('ADAPTIVITY_DEVICE');
 		}
-		this.siteWidth = document.documentElement.clientWidth;
-		this.siteHeight = document.documentElement.clientHeight;
-		this.deviceWidth = screen.width;
-		this.deviceHeight = screen.height;
+		try {
+			this.siteWidth = document.documentElement.clientWidth;
+			this.siteHeight = document.documentElement.clientHeight;
+			this.deviceWidth = screen.width;
+			this.deviceHeight = screen.height;
+		} catch (error) {
+			__error__.exception('SIZES');
+		}
 	}
 
 }

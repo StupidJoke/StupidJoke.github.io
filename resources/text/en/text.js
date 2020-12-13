@@ -37,5 +37,13 @@ this.__phrases__ = {
 	'Week_day_5': 'Friday',
 	'Week_day_6': 'Saturday',
 	'Week_day_7': 'Sunday',
-	'sended_query': 'Sent a request to the url '
+	'ACCEPT': 'The operation was completed successfully. No errors were detected.',
+	'SYNTAX': "The error was detected when you tried to run the operation with syntactic function. You can't fix it, contact support, or use the help information.",
+	'INCLUDER_LIST': 'A fatal error occurred when connecting a list of third-party resources. Some resources were not loaded, please do this manually. If the error is not caused by you, write to support or use the error correction instructions.',
+	'TIME_SCHEME': 'There are problems is in the Time Scheme. Use the guide to edit the Time Scheme.',
+	'LANG_DETECT': 'Error when trying to determine your language. Please install a newer browser. Try installing the latest version of Google Chrome.',
+	'SIZES': 'Error when trying to determine some dimensional characteristics. You may need a newer browser. Try installing the latest version of Google Chrome.',
+	'ADAPTIVITY_DEVICE': "Error when trying to detect your device. If you don't mind installing a newer browser. The latest version of Google Chrome may be suitable for you.",
+	'open_sj': 'You have enabled StupidJoke.',
+	'script_list': 'The list of scripts that were successfully imported.'
 };
