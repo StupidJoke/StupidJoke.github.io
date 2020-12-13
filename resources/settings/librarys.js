@@ -1,0 +1,3 @@
+globalThis.__librarys__ = {
+
+};
